@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.form{
+	width: 65%;
+	padding: 30px;
+	margin: 0 auto;
+	background-color: #e2e2e2;
+	border-radius: 4px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+.form-box {
+	font-size: 16px;
+}
+.form-input, .form-select {
+	width: 100%;
+	padding: 10px;
+	height: 40px;
+	background-color: #fff;
+}
+.form-label, .form-radio_title {
+	display: inline-block;
+	position: relative;
+	padding-right: 10px;
+	
+}
+.required::after {
+	content: '*';
+	position: absolute;
+	right: 0;
+	top: -4px;
+	color: red;
+}
+
+
+.title--main {
+	margin: 0;
+	font-weight: normal;
+}
+
+
+.padding--r-10 {
+	padding-right: 10px;
+}
+.padding--b-20 {
+	padding-bottom: 20px;
+}
+
+.fl {
+	display: flex;
+}
+.fl--justify-between {
+	justify-content: space-between;
+}
+
+.border{
+	border: 1px solid #fff;
+}
+.btn{
+	width:25%;
+	padding-top: 25px;
+}
+.form-submit-btn{
+	height: 30px;
+	width: 100%;
+   background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+   background: -webkit-gradient(linear, 0 0, 0  100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
+   padding: 3px 7px;
+   color: #333;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #666;
+  }
+
+ input:invalid , select:invalid{
+ 	border-color: red;
+ }
+

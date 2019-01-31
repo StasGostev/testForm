@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="country_data.json"></script>
+    
+</head>
+<body>
+    <form class="form" id="myForm" action="#">
+        <h2 class="title--main padding--b-20" style="text-align: center;">Тестовое задание : "Форма"</h2>
+
+        <div class="padding--b-20 fl fl--justify-between">
+            <div class="form-box padding--r-10">
+                <label class="form-label required" for="first-name">Name:</label>
+                <input type="text" name="First name" class="form-input" placeholder="First name" id="first-name" data-valid="required">
+            </div>
+            <div class="form-box padding--r-10">
+                <label class="form-label required" for="last-name" >Last name:</span></label>
+                <input type="text" name="Last name" class="form-input" placeholder="Last name" id="last-name" data-valid="required"
+                >
+            </div>
+            <div class="form-box">
+                <label class="form-label required" for="datepicker">Birth Date:</span></label>
+                <input type="date" id="datepicker" class="form-input form-date" data-valid="required">
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------- -->
+         <div class="fl fl--justify-between padding--b-20 border">
+            <div class="form-radio_title required">Gender:</div>
+                <div class="form-box ">
+                    <input type="radio" name="gender" id="male" checked>
+                    <label class="form-label" for="male">Male</label> 
+                </div>   
+                <div class="form-box">
+                    <input type="radio" name="gender" id="female">
+                    <label class="form-label" for="female">Female</label>
+                </div>       
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        <div class="fl fl--justify-between">
+        <div class="form-box">
+            <div class="form-box padding--b-20">
+                <label class="form-label required" for="email">Email:</label>
+                <input class="form-input" id="email" type="text" placeholder="Type your email" data-valid="required">
+            </div>
+        <div class="form-box">
+            <label class="form-label required" for="password">Password:</label>
+            <input class="form-input" id="password" type="password" placeholder="Type your password" data-valid="required">
+        </div>
+    </div>
+
+    <div class="form-box">
+                <div class="form-box padding--b-20">
+                    <label class="form-label required" for="address">Address:</label>
+                    <input class="form-input" id="address" type="text" placeholder="Type your address"
+                    data-valid="required">
+                </div>
+                    <div class="form-box padding--b-20">
+                        <label class="form-label required" for="country">Country of origin:</span></label>
+                        <select class="form-select" name="selector" id="country_selector" data-valid="required"><option selected disabled></option> </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="fl fl--justify-between">            
+        <div class="form-box ">
+            <label for="note">Notice :</label>
+            <textarea name="notes" id="note" cols="70" rows="" class="form-input"></textarea>
+        </div>
+
+        <div class="form-box btn">
+            <input type="submit" class="form-submit-btn" id="submit">
+        </div>
+    </div>   
+
+</form>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
